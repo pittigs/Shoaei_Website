@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initScrollEffects();
   initModals();
+  initFaqAccordion();
   initContactForm();
   initCardSpotlight();
 });
@@ -507,3 +508,40 @@ function initCardSpotlight() {
     });
   });
 }
+
+/**
+ * FAQ Accordion: Accessible toggle behavior with smooth expansion
+ */
+function initFaqAccordion() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  if (faqItems.length === 0) return;
+
+  faqItems.forEach(item => {
+    const trigger = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+    if (!trigger || !answer) return;
+
+    trigger.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+
+      // Close other open FAQ items for clean single-focus accordion UX
+      faqItems.forEach(otherItem => {
+        if (otherItem !== item && otherItem.classList.contains('open')) {
+          otherItem.classList.remove('open');
+          const otherTrigger = otherItem.querySelector('.faq-question');
+          if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Toggle current item
+      if (isOpen) {
+        item.classList.remove('open');
+        trigger.setAttribute('aria-expanded', 'false');
+      } else {
+        item.classList.add('open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+}
+

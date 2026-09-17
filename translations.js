@@ -1,6 +1,6 @@
 /**
  * Translation Dictionary for Law Office Shirin Shoaei
- * Contains all UI strings, alerts, and legal policies in English and Farsi.
+ * Contains all UI strings, alerts, FAQ items, and legal policies in English and Farsi.
  */
 
 const translations = {
@@ -9,8 +9,10 @@ const translations = {
     navStart: "Home",
     navServices: "Practice Areas",
     navAbout: "About the Firm",
+    navFaq: "FAQ",
     navContact: "Contact",
     logoTitle: "Shoaei Law Office",
+    whatsappChat: "Chat on WhatsApp",
 
     // Hero Section
     heroTag: "Legal Advice & Representation in Iran",
@@ -47,6 +49,21 @@ const translations = {
     value3Title: "Absolute Transparency:",
     value3Text: " Regular reports on the current state of your proceedings directly from the Iranian courts.",
 
+    // FAQ Section
+    faqSubtitle: "FAQ",
+    faqTitle: "Frequently Asked Questions",
+    faqDescription: "Essential information for overseas and international clients regarding power of attorney, judicial portals (Mikhak & Sana), and remote case handling in Iran.",
+    faq1Q: "How do I grant power of attorney from abroad through the Mikhak portal?",
+    faq1A: "Through the official Iranian consular portal (Mikhak - mikhak.mfa.gov.ir), you can draft an attorney power of attorney (وکالتنامه) with our precise legal text. After authentication by your local Iranian consulate or embassy, the document is electronically registered in the judiciary system in Iran, enabling us to act immediately on your behalf without any physical paperwork transit.",
+    faq2Q: "Do I need to travel to Iran in person for court proceedings?",
+    faq2A: "No. In the vast majority of real estate, probate, inheritance, and family matters (including mutual divorce), your physical presence is not required. Through official electronic judicial authorization, we represent you in all court sessions, submissions, and administrative procedures directly in Iran.",
+    faq3Q: "What is Sana (سامانه ثنا) and is registration necessary?",
+    faq3A: "Sana is the electronic notification portal of the Iranian Judiciary. Registering on Sana (which can now also be completed online for overseas Iranians) enables direct electronic access to all official court summons, filings, and judicial verdicts, ensuring complete transparency throughout your case.",
+    faq4Q: "How are consultation fees and international payments handled?",
+    faq4A: "We provide transparent, upfront fee agreements based on the scope and complexity of your legal case. Flexible payment arrangements tailored to clients residing outside Iran are established in compliance with all relevant legal requirements.",
+    faq5Q: "What documents are required to start reviewing my case?",
+    faq5A: "For property cases, copies of title deeds (سند مالکیت), purchase contracts (مبایعه‌نامه), or inheritance certificates are helpful. For family law or divorce proceedings, the marriage certificate (عقدنامه) and identification copies are needed. Documents can be transmitted securely in digital form via our contact form or WhatsApp.",
+
     // Contact Section
     contactSubtitle: "Contact",
     contactTitle: "Write to Us",
@@ -80,32 +97,30 @@ const translations = {
     toastThemeDark: "Dark mode activated",
     toastThemeLight: "Light mode activated",
 
-    // Impressum Content (German & Iranian Law compatible)
+    // Impressum Content
     impressumHtml: `
       <h3>Information according to § 5 TMG / Electronic Commerce Law of the Islamic Republic of Iran (Art. 33)</h3>
       <p>
         <strong>Shirin Shoaei Law Office</strong><br>
-        [Tehran, Iran / Consultation in Germany by appointment]<br>
+        Tehran, Islamic Republic of Iran (Serving international clients worldwide)<br>
         Licensed Attorney of the Judiciary in the Islamic Republic of Iran
       </p>
 
       <h3>Represented by:</h3>
       <p>
-        [Shirin Shoaei] (Managing Director)
+        Shirin Shoaei (Licensed Attorney at Law & Legal Advisor)
       </p>
 
       <h3>Contact:</h3>
       <p>
-        Phone: <a href="tel:+989127146257" dir="ltr">+98 (0) 912 714 6257</a><br>
+        Phone / WhatsApp: <a href="tel:+989127146257" dir="ltr">+98 (0) 912 714 6257</a><br>
         Email: <a href="mailto:sh.shoaei@gmail.com">sh.shoaei@gmail.com</a>
       </p>
 
       <h3>Attorney Admission & Registration (Iran):</h3>
       <p>
-        Admission as an attorney and family advisor was granted by the competent judicial authority of the Islamic Republic of Iran:<br>
-        Licensing Authority: [Bar Association of the Judiciary - مرکز وکلا، کارشناسان رسمی و مشاوران خانواده قوه قضائیه]<br>
-        <strong>License Number:</strong> [PLACEHOLDER - to be provided by customer]<br>
-        <strong>National ID (شناسه ملی):</strong> [PLACEHOLDER - to be provided by customer]
+        Admission as an attorney at law and family advisor was granted by the competent judicial authority of the Islamic Republic of Iran:<br>
+        Licensing Authority: Center for Lawyers, Official Experts and Family Advisors of the Judiciary (مرکز وکلا، کارشناسان رسمی و مشاوران خانواده قوه قضائیه).
       </p>
 
       <h3>Professional Regulations (Iran):</h3>
@@ -114,7 +129,7 @@ const translations = {
       </p>
     `,
 
-    // Datenschutz Content (German DSGVO & Iran Computer Crimes Law compatible)
+    // Datenschutz Content
     datenschutzHtml: `
       <h3>1. Privacy at a Glance</h3>
       <p><strong>General Notes:</strong> The following notes provide a simple overview of what happens to your personal data when you visit this website. Personal data is any data that can be used to identify you personally.</p>
@@ -135,8 +150,10 @@ const translations = {
     navStart: "صفحه اصلی",
     navServices: "حوزه‌های تخصصی",
     navAbout: "درباره دفتر وکالت",
+    navFaq: "سوالات متداول",
     navContact: "تماس با ما",
     logoTitle: "دفتر وکالت شعاعی",
+    whatsappChat: "گفتگو در واتس‌اپ",
 
     // Hero Section
     heroTag: "وکالت و مشاوره حقوقی تخصصی در ایران",
@@ -173,6 +190,21 @@ const translations = {
     value3Title: "شفافیت کامل:",
     value3Text: " اطلاع‌رسانی مستمر و ارایه گزارش‌های منظم از روند پرونده در سامانه‌های ابلاغ الکترونیک قضایی.",
 
+    // FAQ Section
+    faqSubtitle: "سوالات متداول",
+    faqTitle: "پرسش‌های پرتکرار موکلین",
+    faqDescription: "اطلاعات ضروری برای هموطنان مقیم خارج از کشور درباره نحوه تنظیم وکالت‌نامه، سامانه‌های قضایی میخک و ثنا و مراحل رسیدگی به پرونده.",
+    faq1Q: "نحوه اعطای وکالت از خارج از کشور از طریق سامانه میخک چگونه است؟",
+    faq1A: "شما می‌توانید از طریق سامانه رسمی میخک (وزارت امور خارجه - mikhak.mfa.gov.ir) متن وکالت‌نامه تنظیمی توسط ما را بارگذاری نمایید. پس از تایید توسط نزدیک‌ترین سفارت یا سرکنسولگری ایران، وکالت‌نامه به صورت الکترونیکی در سیستم قضایی ثبت شده و ما بدون نیاز به ارسال فیزیکی مدارک، بلافاصله اقدامات قانونی را آغاز می‌کنیم.",
+    faq2Q: "آیا برای رسیدگی به پرونده نیاز به حضور فیزیکی من در ایران است؟",
+    faq2A: "خیر. در اکثریت قریب به اتفاق دعاوی ملکی، انحصار وراثت، تقسیم ترکه و دعاوی خانواده (از جمله طلاق توافقی)، با تنظیم وکالت‌نامه دادگستری نیازی به سفر شما به ایران نبوده و تمامی جلسات، لوایح و مراحل دادرسی توسط وکیل پیگیری می‌شود.",
+    faq3Q: "سامانه ثنا چیست و آیا ثبت‌نام در آن الزامی است؟",
+    faq3A: "سامانه ثنا سامانه رسمی ابلاغ الکترونیک قضایی در ایران است. ثبت‌نام در این سامانه (که اکنون برای ایرانیان خارج از کشور نیز به صورت آنلاین امکان‌پذیر است) باعث می‌شود تمامی ابلاغیه‌ها، وقت‌های رسیدگی و دادنامه‌ها مستقیماً و با شفافیت ۱۰۰٪ در دسترس شما قرار گیرد.",
+    faq4Q: "حق‌الوکاله و هزینه‌های دادرسی چگونه محاسبه و پرداخت می‌شود؟",
+    faq4A: "حق‌الوکاله بر اساس نوع پرونده، میزان پیچیدگی و توافق طرفین در قالب قرارداد وکالت الکترونیک تعیین می‌گردد. جهت رفاه حال موکلین خارج از کشور، روش‌های پرداخت متناسب توافق خواهد شد.",
+    faq5Q: "برای بررسی پرونده چه مدارکی باید ارسال شود؟",
+    faq5A: "برای پرونده‌های ملکی، تصاویر اسناد مالکیت، مبایعه‌نامه، قولنامه یا گواهی انحصار وراثت مورد نیاز است. برای دعاوی خانوادگی و طلاق، تصویر سند ازدواج (عقدنامه) و مدارک هویتی لازم می‌باشد. می‌توانید مدارک خود را به صورت امن از طریق فرم تماس یا واتس‌اپ ارسال فرمایید.",
+
     // Contact Section
     contactSubtitle: "ارتباط با ما",
     contactTitle: "ارسال پیام و شرح پرونده",
@@ -206,32 +238,29 @@ const translations = {
     toastThemeDark: "حالت تاریک فعال شد",
     toastThemeLight: "حالت روشن فعال شد",
 
-    // Impressum Content (German & Iranian Law compatible)
+    // Impressum Content
     impressumHtml: `
       <h3>شناسنامه قانونی سایت مطابق با ماده ۳۳ قانون تجارت الکترونیکی جمهوری اسلامی ایران</h3>
       <p>
         <strong>دفتر وکالت شیرین شعاعی</strong><br>
-        [تهران، ایران / ارایه خدمات به موکلین مقیم خارج از کشور]<br>
+        تهران، جمهوری اسلامی ایران (ارایه خدمات حقوقی به موکلین سراسر جهان)<br>
         وکیل پایه یک دادگستری و مشاور حقوقی قوه قضاییه
       </p>
 
-      <h3>مدیریت و نمایندگی قانونی:</h3>
+      <h3>مدیریت و وکالت قانونی:</h3>
       <p>
-        [شیرین شعاعی] (وکیل پایه یک دادگستری)
+        شیرین شعاعی (وکیل پایه یک دادگستری و مشاور خانواده)
       </p>
 
-      <h3>اطلاعات تماس:</h3>
+      <h3>اطلاعات تماس و پشتیبانی:</h3>
       <p>
-        تلفن تماس: <a href="tel:+989127146257" dir="ltr">+۹۸ ۹۱۲ ۷۱۴ ۶۲۵۷</a><br>
+        تلفن تماس / واتس‌اپ: <a href="tel:+989127146257" dir="ltr">+۹۸ ۹۱۲ ۷۱۴ ۶۲۵۷</a><br>
         پست الکترونیکی: <a href="mailto:sh.shoaei@gmail.com" dir="ltr">sh.shoaei@gmail.com</a>
       </p>
 
-      <h3>مشخصات ثبت شرکت و پروانه وکالت (ایران):</h3>
+      <h3>پروانه وکالت رسمی:</h3>
       <p>
-        پروانه وکالت رسمی صادره از قوه قضاییه جمهوری اسلامی ایران:<br>
-        مرجع صادرکننده: [مرکز وکلا، کارشناسان رسمی و مشاوران خانواده قوه قضائیه]<br>
-        <strong>شماره پروانه وکالت:</strong> [پلاسکولدر - توسط مشتری اعلام خواهد شد]<br>
-        <strong>شناسه ملی:</strong> [پلاسکولدر - توسط مشتری اعلام خواهد شد]
+        مرجع صادرکننده پروانه: مرکز وکلا، کارشناسان رسمی و مشاوران خانواده قوه قضائیه جمهوری اسلامی ایران.
       </p>
 
       <h3>قوانین حاکم:</h3>
@@ -240,7 +269,7 @@ const translations = {
       </p>
     `,
 
-    // Datenschutz Content (German DSGVO & Iran Computer Crimes Law compatible)
+    // Datenschutz Content
     datenschutzHtml: `
       <h3>۱. حریم خصوصی و اسرار موکل در یک نگاه</h3>
       <p><strong>توضیحات عمومی:</strong> اطلاعات ارسالی از طریق این سایت به عنوان اسرار حرفه‌ای وکالت تلقی گردیده و به صورت محرمانه محافظت می‌شود.</p>
