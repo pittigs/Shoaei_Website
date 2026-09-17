@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFaqAccordion();
   initContactForm();
   initCardSpotlight();
+  initScrollToTop();
 });
 
 /**
@@ -440,6 +441,36 @@ function initContactForm() {
     }
   });
 
+  // Dedicated WhatsApp Inquiry Dispatcher
+  const whatsappSubmitBtn = document.getElementById('whatsappSubmitBtn');
+  if (whatsappSubmitBtn) {
+    whatsappSubmitBtn.addEventListener('click', () => {
+      const name = nameInput.value.trim();
+      const email = emailInput.value.trim();
+      const subjectInput = document.getElementById('formSubject');
+      const subject = subjectInput ? subjectInput.value.trim() : '';
+      const message = messageInput.value.trim();
+      const strings = translations[currentLang];
+
+      if (!message) {
+        showError(messageInput, strings.validationMessageEmpty);
+        messageInput.focus();
+        return;
+      }
+
+      let waText = '';
+      if (currentLang === 'fa') {
+        waText = `با سلام خدمت دفتر وکالت شیرین شعاعی،\n\nنام: ${name || 'ذکر نشده'}\nایمیل: ${email || 'ذکر نشده'}\n${subject ? `موضوع: ${subject}\n` : ''}\nشرح پرونده:\n${message}`;
+      } else {
+        waText = `Hello Shirin Shoaei Law Office,\n\nName: ${name || 'Not specified'}\nEmail: ${email || 'Not specified'}\n${subject ? `Subject: ${subject}\n` : ''}\nCase Details:\n${message}`;
+      }
+
+      const waUrl = `https://wa.me/989127146257?text=${encodeURIComponent(waText)}`;
+      window.open(waUrl, '_blank', 'noopener,noreferrer');
+      showToast(strings.toastSuccess, 'success');
+    });
+  }
+
   function showError(input, message) {
     input.classList.add('invalid');
     const errorMsg = input.nextElementSibling;
@@ -448,6 +479,32 @@ function initContactForm() {
       errorMsg.style.display = 'block';
     }
   }
+}
+
+/**
+ * Scroll to Top Floating Button
+ */
+function initScrollToTop() {
+  const scrollBtn = document.getElementById('scrollToTopBtn');
+  if (!scrollBtn) return;
+
+  const toggleVisibility = () => {
+    if (window.scrollY > 350) {
+      scrollBtn.classList.add('visible');
+    } else {
+      scrollBtn.classList.remove('visible');
+    }
+  };
+
+  window.addEventListener('scroll', toggleVisibility);
+  toggleVisibility();
+
+  scrollBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 }
 
 /**

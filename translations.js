@@ -8,11 +8,37 @@ const translations = {
     // Navigation
     navStart: "Home",
     navServices: "Practice Areas",
+    navProcess: "Process",
     navAbout: "About the Firm",
     navFaq: "FAQ",
     navContact: "Contact",
     logoTitle: "Shoaei Law Office",
     whatsappChat: "Chat on WhatsApp",
+
+    // Credential Badge
+    credentialBadgeTitle: "Licensed Attorney at Law",
+    credentialBadgeSub: "Iranian Judiciary Bar Association (مرکز وکلا)",
+
+    // Process Section
+    processSubtitle: "How It Works",
+    processTitle: "Your 4-Step Path to Resolution in Iran",
+    processDescription: "A fully transparent, remote legal workflow designed for overseas clients – no travel required.",
+    step1Num: "01",
+    step1Title: "Initial Assessment",
+    step1Desc: "We review your title deeds, contracts, or family documents and establish a clear legal strategy under Iranian law.",
+    step2Num: "02",
+    step2Title: "Mikhak Power of Attorney",
+    step2Desc: "We provide you with our tailored judicial power of attorney text to submit on mikhak.mfa.gov.ir for rapid consular attestation.",
+    step3Num: "03",
+    step3Title: "Judicial Proceedings & Sana",
+    step3Desc: "We file claims and represent you directly before Iranian courts. Track all filings and notices in real-time via the Sana portal.",
+    step4Num: "04",
+    step4Title: "Resolution & Enforcement",
+    step4Desc: "We enforce court judgments, register title transfers, or finalize settlements, remitting documents and outcomes securely.",
+
+    // Portal Links
+    portalMikhak: "Official Mikhak Portal",
+    portalSana: "Official Sana Portal",
 
     // Hero Section
     heroTag: "Legal Advice & Representation in Iran",
@@ -75,6 +101,11 @@ const translations = {
     contactFormSubject: "Subject / Case Number (Optional)",
     contactFormMessage: "Description of Your Case *",
     contactFormSubmit: "Send Inquiry",
+    contactFormWhatsApp: "Send via WhatsApp",
+    mobileCall: "Call",
+    mobileWhatsApp: "WhatsApp",
+    mobileForm: "Inquiry",
+    scrollToTop: "Scroll to top",
     placeholderName: "Your Name",
     placeholderEmail: "your.email@example.com",
     placeholderSubject: "E.g., property in Tehran, divorce...",
@@ -149,11 +180,37 @@ const translations = {
     // Navigation
     navStart: "صفحه اصلی",
     navServices: "حوزه‌های تخصصی",
+    navProcess: "روند کار",
     navAbout: "درباره دفتر وکالت",
     navFaq: "سوالات متداول",
     navContact: "تماس با ما",
     logoTitle: "دفتر وکالت شعاعی",
     whatsappChat: "گفتگو در واتس‌اپ",
+
+    // Credential Badge
+    credentialBadgeTitle: "وکیل پایه یک دادگستری",
+    credentialBadgeSub: "مرکز وکلا، کارشناسان رسمی و مشاوران خانواده قوه قضائیه",
+
+    // Process Section
+    processSubtitle: "مراحل انجام کار",
+    processTitle: "مسیر ۴ مرحله‌ای رسیدگی به پرونده شما در ایران",
+    processDescription: "فرایندی شفاف، مطمئن و از راه دور ویژه هموطنان مقیم خارج از کشور – بدون نیاز به سفر به ایران.",
+    step1Num: "۰۱",
+    step1Title: "مشاوره و ارزیابی اولیه",
+    step1Desc: "بررسی دقیق اسناد مالکیت، قراردادها یا مدارک خانوادگی و تعیین استراتژی قانونی متناسب با قوانین جاری ایران.",
+    step2Num: "۰۲",
+    step2Title: "تنظیم وکالت الکترونیکی میخک",
+    step2Desc: "تنظیم متن دقیق وکالت‌نامه دادگستری و ثبت در سامانه میخک (mikhak.mfa.gov.ir) جهت تایید سریع در سفارت یا کنسولگری.",
+    step3Num: "۰۳",
+    step3Title: "ثبت در ثنا و دادرسی قضایی",
+    step3Desc: "طرح دعوا و دفاع مستمر در شعب دادگاه‌های ایران با امکان مشاهده همزمان کلیه ابلاغیه‌ها و وقت‌ها در سامانه ثنا.",
+    step4Num: "۰۴",
+    step4Title: "صدور رای و اجرای احکام",
+    step4Desc: "اخذ دادنامه قطعی، پیگیری اجرای احکام، انتقال رسمی اسناد یا ثبت طلاق و تحویل مستندات به موکل.",
+
+    // Portal Links
+    portalMikhak: "ورود به سامانه میخک",
+    portalSana: "ورود به سامانه ثنا",
 
     // Hero Section
     heroTag: "وکالت و مشاوره حقوقی تخصصی در ایران",
@@ -216,6 +273,11 @@ const translations = {
     contactFormSubject: "موضوع پرونده (اختیاری)",
     contactFormMessage: "شرح خلاصه پرونده و خواسته شما *",
     contactFormSubmit: "ارسال درخواست",
+    contactFormWhatsApp: "ارسال پیام در واتس‌اپ",
+    mobileCall: "تماس",
+    mobileWhatsApp: "واتس‌اپ",
+    mobileForm: "ارسال پیام",
+    scrollToTop: "بازگشت به بالا",
     placeholderName: "نام و نام خانوادگی شما",
     placeholderEmail: "your.email@example.com",
     placeholderSubject: "مثال: ملک در تهران، طلاق توافقی...",

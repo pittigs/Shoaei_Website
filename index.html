@@ -6,6 +6,10 @@
   
   <!-- Canonical & SEO Meta Tags -->
   <link rel="canonical" href="https://shirin.shoaei.eu/">
+  <link rel="alternate" hreflang="en" href="https://shirin.shoaei.eu/">
+  <link rel="alternate" hreflang="fa" href="https://shirin.shoaei.eu/">
+  <link rel="alternate" hreflang="x-default" href="https://shirin.shoaei.eu/">
+  <link rel="manifest" href="site.webmanifest">
   <title>Shirin Shoaei Law Office | Law of the Islamic Republic of Iran</title>
   <meta name="description" content="Shirin Shoaei Law Office in Tehran (Iran) – Specialized in Iranian property law, real estate disputes, and divorce proceedings before Iranian courts.">
   <meta name="keywords" content="Lawyer Iran, Law Office Tehran, Property Dispute Iran, Divorce Iran, Real Estate Law Iran, Shirin Shoaei, Mikhak Power of Attorney, Sana Registration, وکیل دعاوی ملکی ایران, طلاق توافقی">
@@ -61,7 +65,8 @@
 
   <!-- Favicon / Styling / Fonts -->
   <link rel="icon" type="image/png" href="judiciary_seal.png">
-  <link rel="stylesheet" href="style.css?v=2.2">
+  <link rel="preload" href="logo.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="style.css?v=2.3">
 </head>
 <body>
 
@@ -74,7 +79,10 @@
   <header class="header" id="header" role="banner">
     <div class="container">
       <a href="#home" class="logo" aria-label="Shirin Shoaei Law Office - Home">
-        <img src="judiciary_seal.png" alt="Logo Shirin Shoaei Law Office" class="logo-img">
+        <picture>
+          <source srcset="judiciary_seal.webp" type="image/webp">
+          <img src="judiciary_seal.png" alt="Logo Shirin Shoaei Law Office" class="logo-img" width="38" height="38">
+        </picture>
         <span data-i18n="logoTitle">Shoaei Law Office</span>
       </a>
       
@@ -82,6 +90,7 @@
         <ul class="nav-list">
           <li><a href="#home" class="nav-link active" data-i18n="navStart">Home</a></li>
           <li><a href="#services" class="nav-link" data-i18n="navServices">Practice Areas</a></li>
+          <li><a href="#process" class="nav-link" data-i18n="navProcess">Process</a></li>
           <li><a href="#about" class="nav-link" data-i18n="navAbout">About the Firm</a></li>
           <li><a href="#faq" class="nav-link" data-i18n="navFaq">FAQ</a></li>
           <li><a href="#contact" class="nav-link" data-i18n="navContact">Contact</a></li>
@@ -149,7 +158,10 @@
             <div class="logo-hero-container">
               <div class="logo-glow-behind" aria-hidden="true"></div>
               <div class="logo-hero-card glass-card">
-                <img src="logo.png" alt="Shirin Shoaei Law Office Logo" class="logo-hero-img">
+                <picture>
+                  <source srcset="logo.webp" type="image/webp">
+                  <img src="logo.png" alt="Shirin Shoaei Law Office Logo" class="logo-hero-img" width="480" height="480">
+                </picture>
               </div>
             </div>
           </div>
@@ -212,6 +224,97 @@
       </div>
     </section>
 
+    <!-- Process Section (4 Steps) -->
+    <section id="process" class="section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-subtitle" data-i18n="processSubtitle">How It Works</span>
+          <h2 data-i18n="processTitle">Your 4-Step Path to Resolution in Iran</h2>
+          <p data-i18n="processDescription">A fully transparent, remote legal workflow designed for overseas clients – no travel required.</p>
+        </div>
+
+        <div class="process-grid">
+          
+          <!-- Step 1 -->
+          <div class="process-card glass-card reveal">
+            <div class="process-step-num" data-i18n="step1Num">01</div>
+            <div class="process-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <h3 class="process-step-title" data-i18n="step1Title">Initial Assessment</h3>
+            <p class="process-step-desc" data-i18n="step1Desc">We review your title deeds, contracts, or family documents and establish a clear legal strategy under Iranian law.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-card glass-card reveal reveal-delay-1">
+            <div class="process-step-num" data-i18n="step2Num">02</div>
+            <div class="process-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <h3 class="process-step-title" data-i18n="step2Title">Mikhak Power of Attorney</h3>
+            <p class="process-step-desc" data-i18n="step2Desc">We provide you with our tailored judicial power of attorney text to submit on mikhak.mfa.gov.ir for rapid consular attestation.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-card glass-card reveal reveal-delay-2">
+            <div class="process-step-num" data-i18n="step3Num">03</div>
+            <div class="process-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="process-step-title" data-i18n="step3Title">Judicial Proceedings & Sana</h3>
+            <p class="process-step-desc" data-i18n="step3Desc">We file claims and represent you directly before Iranian courts. Track all filings and notices in real-time via the Sana portal.</p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="process-card glass-card reveal reveal-delay-3">
+            <div class="process-step-num" data-i18n="step4Num">04</div>
+            <div class="process-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h3 class="process-step-title" data-i18n="step4Title">Resolution & Enforcement</h3>
+            <p class="process-step-desc" data-i18n="step4Desc">We enforce court judgments, register title transfers, or finalize settlements, remitting documents and outcomes securely.</p>
+          </div>
+
+        </div>
+
+        <!-- Portal Quick Links -->
+        <div class="portal-quick-links reveal">
+          <a href="https://mikhak.mfa.gov.ir/" target="_blank" rel="noopener noreferrer" class="portal-pill-btn">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            <span data-i18n="portalMikhak">Official Mikhak Portal</span>
+          </a>
+          <a href="https://sana.adliran.ir/" target="_blank" rel="noopener noreferrer" class="portal-pill-btn">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            <span data-i18n="portalSana">Official Sana Portal</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="section">
       <div class="container">
@@ -231,6 +334,18 @@
               <div class="stat-item glass-card">
                 <span class="stat-number" data-i18n="stat2Number">0</span>
                 <span class="stat-label" data-i18n="stat2Label">Travel effort for you</span>
+              </div>
+            </div>
+
+            <!-- Official Judicial Bar Credential Badge -->
+            <div class="credential-badge glass-card">
+              <picture>
+                <source srcset="judiciary_seal.webp" type="image/webp">
+                <img src="judiciary_seal.png" alt="Judiciary Seal" class="badge-seal" width="44" height="44">
+              </picture>
+              <div class="badge-text">
+                <span class="badge-title" data-i18n="credentialBadgeTitle">Licensed Attorney at Law</span>
+                <span class="badge-sub" data-i18n="credentialBadgeSub">Iranian Judiciary Bar Association (مرکز وکلا)</span>
               </div>
             </div>
           </div>
@@ -413,6 +528,12 @@
 
               <div class="form-submit-wrapper">
                 <button type="submit" class="btn btn-primary" data-i18n="contactFormSubmit">Send Inquiry</button>
+                <button type="button" id="whatsappSubmitBtn" class="btn btn-whatsapp-form" aria-label="Send via WhatsApp">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" style="width: 18px; height: 18px; min-width: 18px; flex-shrink: 0;">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                  </svg>
+                  <span data-i18n="contactFormWhatsApp">Send via WhatsApp</span>
+                </button>
               </div>
 
             </form>
@@ -483,9 +604,39 @@
     <span data-i18n="whatsappChat">Chat on WhatsApp</span>
   </a>
 
+  <!-- Scroll-to-Top Floating Button -->
+  <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Scroll to top" title="Scroll to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Mobile Sticky Bottom Bar (Screens <= 768px) -->
+  <aside class="mobile-quick-bar" aria-label="Quick Actions">
+    <a href="tel:+989127146257" class="mobile-quick-btn" aria-label="Call Office">
+      <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+      </svg>
+      <span data-i18n="mobileCall">Call</span>
+    </a>
+    <a href="https://wa.me/989127146257" target="_blank" rel="noopener noreferrer" class="mobile-quick-btn whatsapp-highlight" aria-label="WhatsApp Chat">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+      <span data-i18n="mobileWhatsApp">WhatsApp</span>
+    </a>
+    <a href="#contact" class="mobile-quick-btn" aria-label="Go to Contact Form">
+      <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+        <polyline points="22,6 12,13 2,6"></polyline>
+      </svg>
+      <span data-i18n="mobileForm">Inquiry</span>
+    </a>
+  </aside>
+
   <!-- Translation Dictionary -->
-  <script src="translations.js?v=2.2"></script>
+  <script src="translations.js?v=2.3"></script>
   <!-- Main JavaScript File -->
-  <script src="app.js?v=2.2"></script>
+  <script src="app.js?v=2.3"></script>
 </body>
 </html>

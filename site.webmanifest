@@ -1,0 +1,16 @@
+{
+  "name": "Shirin Shoaei Law Office",
+  "short_name": "Shoaei Law",
+  "description": "Specialized legal advice & representation for Iranian property and family law.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0a0d14",
+  "theme_color": "#c5a059",
+  "icons": [
+    {
+      "src": "judiciary_seal.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png"
+    }
+  ]
+}
