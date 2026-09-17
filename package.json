@@ -1,0 +1,15 @@
+{
+  "name": "shirin-shoaei-law-office",
+  "version": "1.0.0",
+  "description": "Multilingual website for Shirin Shoaei Law Office (EN & FA)",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx browser-sync start --server --files \"*.html, *.css, *.js\""
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.3"
+  },
+  "keywords": [],
+  "author": "Shirin Shoaei Law Office",
+  "license": "ISC"
+}
